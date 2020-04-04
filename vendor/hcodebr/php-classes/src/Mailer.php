@@ -8,7 +8,7 @@ class Mailer {
 	
 	const USERNAME = "marcelobazan@demandanet.com";
 	const PASSWORD = "<?password?>";
-	const NAME_FROM = "Loja ";
+	const NAME_FROM = "Loja";
 
 	private $mail;
 
