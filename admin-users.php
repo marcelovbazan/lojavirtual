@@ -3,6 +3,8 @@
 use \Hcode\PageAdmin;
 use \Hcode\Model\User;
 
+
+
 $app->get("/admin/users/:iduser/password", function($iduser){
 
 	User::verifyLogin();
