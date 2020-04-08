@@ -40,7 +40,7 @@ class User extends Model {
 			||
 			!(int)$_SESSION[User::SESSION]["iduser"] > 0
 		) {
-			//NÃ£o estÃ¡ logado
+			//Não esta logado
 			return false;
 
 		} else {
@@ -74,7 +74,7 @@ class User extends Model {
 
 		if (count($results) === 0)
 		{
-			throw new \Exception("UsuÃ¡rio inexistente ou senha invÃ¡lida.");
+			throw new \Exception("Usuário inexistente ou senha inválida.");
 		}
 
 		$data = $results[0];
@@ -93,7 +93,7 @@ class User extends Model {
 			return $user;
 
 		} else {
-			throw new \Exception("UsuÃ¡rio inexistente ou senha invÃ¡lida.");
+			throw new \Exception("Usuário inexistente ou senha inválida.");
 		}
 
 	}
@@ -229,7 +229,7 @@ class User extends Model {
 			if (count($results2) === 0)
 			{
 
-				throw new \Exception("NÃ£o foi possÃ­vel recuperar a senha.");
+				throw new \Exception("Não foi possível recuperar a senha.");
 
 			}
 			else
@@ -292,7 +292,7 @@ class User extends Model {
 
 		if (count($results) === 0)
 		{
-			throw new \Exception("NÃ£o foi possÃ­vel recuperar a senha.");
+			throw new \Exception("Não foi possível recuperar a senha.");
 		}
 		else
 		{
